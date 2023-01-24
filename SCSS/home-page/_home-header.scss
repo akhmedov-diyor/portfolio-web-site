@@ -15,6 +15,10 @@ $green-color: #5FB4A2;
     width: 60px;
     height: 32px;
   }
+
+  &-hamburger{
+    display: none;
+  }
 }
 
 .header__nav {
@@ -61,9 +65,8 @@ $green-color: #5FB4A2;
       background-color: $grey-color;
       padding: 40px 0;
       top: 88px;
-      left: 130px;
+      left: 120px;
       transform: translateX(-400px);
-      transition: 0.5s;
     }
 
     &-link{
@@ -103,6 +106,7 @@ $green-color: #5FB4A2;
 
   .header__nav-list.active{
     transform: translateX(0px);
+    transition: 0.3s ease;
   }
 }
 // * HEADER MOBILE FINISHED
