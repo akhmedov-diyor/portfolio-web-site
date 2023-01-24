@@ -1,0 +1,107 @@
+// ABOUT SECTION STARTED
+
+.about__section {
+  margin-bottom: 150px;
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-picture {
+    margin-right: 125px;
+  }
+
+  &-text {
+    padding: 50px 0;
+    border-top: 1px solid #33323d29;
+    border-bottom: 1px solid #33323d29;
+  }
+
+  &-title {
+    font-family: "Nova";
+    font-weight: 700px;
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    color: $grey-color;
+    margin-bottom: 28px;
+  }
+
+  &-sub {
+    width: 100%;
+    max-width: 350px;
+    font-family: "PublicSans";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $grey-color;
+    margin-bottom: 24px;
+  }
+
+  &-btn {
+    display: inline-block;
+    font-family: "PublicSans";
+    font-size: 12px;
+    line-height: 14.1px;
+    letter-spacing: 2px;
+    color: $grey-color;
+    border: 1px solid $grey-color;
+    padding: 17px 34px;
+
+    &:active {
+      background-color: #33323d;
+      color: #fafafa;
+    }
+  }
+}
+
+// *TABLET VERSION STARTED
+@media screen and(max-width:768px) {
+  .about__section {
+
+    margin-bottom: 96px;
+    &-picture{
+      margin-right: 69px;
+    }
+
+    &-sub{
+      width: 100%;
+      max-width: 339px;
+    }
+  }
+}
+// *TABLET VERSION FINISHED
+
+
+// *MOBILE VERSION STARTED
+@media screen and(max-width: 375px){
+  .about__section{
+
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-picture{
+      margin-bottom: 32px;
+    }
+
+    &-avatar{
+      width: 311px;
+    }
+
+    &-text{
+      padding: 32px 0;
+    }
+
+    &-sub{
+      width: 100%;
+      max-width: 311px;
+      opacity: 80%;
+      margin-bottom: 24px;
+    }
+  }
+}
+// *MOBILE VERSION FINISHED
+
+// ABOUT SECTION FINISHED
