@@ -1,34 +1,110 @@
-$grey-color: #33323D;
+$grey-color: #33323d;
+$white-color: #fff;
+$green-color: #5FB4A2;
 
-
-.header__section{
-
-  &-wrapper{
+// !HEADER SECTION STARTED
+.header__section {
+  &-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 54px 0;
   }
 
-  &-logo{
+  &-logo {
     width: 60px;
     height: 32px;
   }
 }
 
-.header__nav{
-
-  &-list{
-    display: flex;width: 306px;
+.header__nav {
+  &-list {
+    display: flex;
+    width: 306px;
     justify-content: space-between;
   }
 
-  &-link{
+  &-link {
     font-family: "PublicSans";
     font-weight: 400;
     font-size: 12px;
     letter-spacing: 2px;
     line-height: 14.32px;
     color: $grey-color;
+
+    &:hover{
+      color: $green-color;
+      transition: 0.1s;
+    }
   }
 }
+
+// * HEADER MOBILE STARTED
+@media screen and (max-width: 375px) {
+  .header__section-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 351px;
+    padding: 32px 0;
+  }
+  .header__nav {
+    &-list {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      width: 223px;
+      height: 186px;
+      background-color: $grey-color;
+      padding: 40px 0;
+      top: 88px;
+      left: 130px;
+      transform: translateX(-400px);
+      transition: 0.5s;
+    }
+
+    &-link{
+      color: $white-color;
+    }
+  } 
+
+  .header__section-hamburger{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 13px;
+    cursor: pointer;
+  }
+
+  .bar{
+    width: 24px;
+    height: 1.5px;
+    background-color: $grey-color;
+  }
+
+  .header__section-hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .header__section-hamburger.active .bar:nth-child(1){
+    transform: translateY(5px) rotate(45deg);
+    transition: 0.3s;
+  }
+
+  .header__section-hamburger.active .bar:nth-child(3){
+    transform: translateY(-7px) rotate(-45deg);
+    transition: 0.3s;
+  }
+
+  .header__nav-list.active{
+    transform: translateX(0px);
+  }
+}
+// * HEADER MOBILE FINISHED
+
+// !HEADER SECTION FINISHED
