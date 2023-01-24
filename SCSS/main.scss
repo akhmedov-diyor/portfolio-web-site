@@ -2,3 +2,55 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+@font-face {
+  font-family: "Nova";
+  src: url(/fonts/IbarraRealNova-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Nova";
+  src: url(/fonts/IbarraRealNova-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url(/fonts/PublicSans-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url(/fonts/PublicSans-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url(/fonts/PublicSans-Regular.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "PublicSans";
+  src: url(/fonts/PublicSans-SemiBold.ttf);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.container{
+  width: 100%;
+  max-width: 1150px;
+}
+
+ul{
+  padding: 0;
+  list-style: none;
+}
