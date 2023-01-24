@@ -1,0 +1,96 @@
+// CONTACT SECTION STARTED
+
+.contact__section {
+  margin-bottom: 150px;
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-title {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+    font-family: "Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 534px;
+      height: 1px;
+      background-color: $grey-color;
+      opacity: 15%;
+      top: 3rem;
+      left: 110%;
+    }
+  }
+
+  &-btn {
+    font-family: "PublicSans";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: $grey-color;
+    border: 1px solid $grey-color;
+    padding: 17px 34px;
+
+    &:active {
+      background-color: $grey-color;
+      color: $white-color;
+    }
+  }
+}
+
+// * TABLET VERSION STARTED
+@media screen and(max-width:768px) {
+  .contact__section {
+    margin-bottom: 96px;
+
+    &-title {
+      &::after {
+        width: 113px;
+      }
+    }
+  }
+}
+// * TABLET VERSION FINISHED
+
+// * MOBILE VERSION STARTED
+@media screen and(max-width: 375px) {
+  .contact__section {
+    margin-bottom: 80px;
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &-btn{
+
+      &:active{
+        background-color: $grey-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+// * MOBILE VERSION FINISHED
+
+// CONTACT SECTION FINISHED
