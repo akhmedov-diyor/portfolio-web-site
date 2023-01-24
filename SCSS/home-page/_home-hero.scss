@@ -1,0 +1,110 @@
+// HERO SECTION STARTED
+
+.hero__section {
+  margin-bottom: 150px;
+  &-wrapper {
+    padding-top: 243px;
+    background-image: url(/img/home-img/home-hero-bg.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  &-title {
+    width: 100%;
+    max-width: 410px;
+    font-family: "Nova";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: 0.45px;
+    color: $grey-color;
+    margin-bottom: 53px;
+  }
+
+  &-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 445px;
+    background-color: #FAFAFA;
+    padding-top: 56px;
+  }
+
+  &-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "PublicSans";
+    width: 100%;
+    max-width: 200px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 2px;
+    line-height: 14.1px;
+    color: $white-color;
+    background-color: #203A4C; 
+    
+    &:active{
+      background-color: #5FB4A2;
+    }
+
+    &:active .hero__btn-img{
+      background-color: #005140;
+    }
+  }
+}
+
+.hero__btn-img{
+  background-color: #000;
+  opacity: 10%;
+  margin-right: 28px;
+  padding: 18px 16px;
+}
+
+// * TABLET VERSION STARTED
+@media screen and(max-width:768px){
+  .hero__section{
+    margin-bottom: 96px;
+    &-wrapper{
+      width: 100%;
+      max-width: 705px;
+      background-image: url(/img/home-img/hero-tablet-bg.webp);
+      background-size: contain;
+      padding-top: 322px;
+    }
+
+    &-title{
+      font-size: 40px;
+      letter-spacing: 0.36px;
+      line-height: 42px;
+      margin-bottom: 48px;
+    }
+  }
+}
+// * TABLET VERSION FINISHED
+
+
+// * MOBILE VERSION STARTED
+@media screen and(max-width:375px){
+  .hero__section{
+    
+    &-wrapper{
+      padding-top: 295px;
+    }
+
+    &-content{
+      padding-top: 0;
+    }
+
+    &-title{
+      width: 100%;
+      max-width: 311px;
+      line-height: 42px;
+      letter-spacing: -0.36px;
+      margin-bottom: 32px;
+    }
+  }
+}
+// * MOBILE VERSION FINISHED
+
+// HERO SECTION FINISHED
